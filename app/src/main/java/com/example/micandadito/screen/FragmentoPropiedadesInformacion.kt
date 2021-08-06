@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import com.bumptech.glide.Glide
 import com.example.micandadito.R
-import com.example.micandadito.adapters.PropiedadesInformacionAdapter
-import com.example.micandadito.adapters.PicturesAdapter
-import com.example.micandadito.communicator.Communicator
+import com.example.micandadito.adapters.propiedadesinfoadapter.PropiedadesInformacionAdapter
+import com.example.micandadito.adapters.propiedadesinfoadapter.PicturesAdapter
 import com.example.micandadito.databinding.FragmentPropiedadesInformacionBinding
 import com.example.micandadito.model.DirectionJson
 import com.example.micandadito.screen.fragmentos.FragmentoUsuarioPropiedad

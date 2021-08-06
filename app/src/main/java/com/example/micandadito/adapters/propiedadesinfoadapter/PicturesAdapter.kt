@@ -1,4 +1,4 @@
-package com.example.micandadito.adapters
+package com.example.micandadito.adapters.propiedadesinfoadapter
 
 import android.content.Context
 import android.view.LayoutInflater

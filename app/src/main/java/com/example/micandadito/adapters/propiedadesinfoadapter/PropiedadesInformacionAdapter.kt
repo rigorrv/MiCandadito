@@ -1,4 +1,4 @@
-package com.example.micandadito.adapters
+package com.example.micandadito.adapters.propiedadesinfoadapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

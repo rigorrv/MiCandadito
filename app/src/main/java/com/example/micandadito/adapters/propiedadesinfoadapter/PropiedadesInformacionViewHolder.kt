@@ -1,4 +1,4 @@
-package com.example.micandadito.adapters
+package com.example.micandadito.adapters.propiedadesinfoadapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
