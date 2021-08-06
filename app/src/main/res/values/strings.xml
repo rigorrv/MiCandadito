@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiCandadito</string>
+    <string name="todo">todo</string>
+    <string name="email">email</string>
+    <string name="sms">sms</string>
+    <string name="whatsapp">whatsApp</string>
+</resources>

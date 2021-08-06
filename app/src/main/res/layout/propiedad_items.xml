@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cuentaConInfoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#E64545"
+        android:textSize="20sp"
+        android:visibility="visible"
+        tools:text="Esta propiedad cuenta con:" />
+
+    <TextView
+        android:id="@+id/recamarasTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_camaicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="2 Recamaras"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/banosTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_banoicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="2 Banos"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/carrosTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_caricon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="2 Carros"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/instalacionesTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_heathericon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Boiler, A/C"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/cocinaTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_kitchenicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Cocina"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/estanciaTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_estanciaicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Estancia"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/patioTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_patioicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Patio"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/albercaTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_poolicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Alberca"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/seEncuentraTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#E64545"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:text="Se encuentra cerca de:"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/hospitalTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_hospitalicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="IMSSS"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/parqueTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_parkicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Parque La Pitic"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/escuelaTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_schoolicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Regis"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tiendaTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_background"
+        android:drawableStart="@drawable/ic_tiendaicon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:textColor="#172233"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="V-Marc"
+        tools:visibility="visible" />
+
+</LinearLayout>

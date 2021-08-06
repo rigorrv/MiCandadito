@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:scrollbarSize="28sp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingEnd="16dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_propiedad"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        tools:title="Villa del palmar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/imagenesAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <TextView
+        android:id="@+id/precioTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_gradient_navigation_name"
+        android:fontFamily="@font/amaranthbold"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        tools:text="$8000"
+        android:textColor="#E64545"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenesAdapter"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/likeBtn2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/propiedad_love_btn"
+        android:button="@null"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenesAdapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/masInfoBtn" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenesAdapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/circulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:tint="#172233"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenesAdapter">
+
+        <RadioButton
+            android:id="@+id/fotosPropiedadesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/foto_mapa_menu_drawable"
+            android:button="@null"
+            android:checked="true"
+            android:fontFamily="@font/amaranthregular"
+            android:textAlignment="center"
+            android:textColor="@color/foto_mapa_menu_text"
+            android:textSize="20sp"
+            tools:text="Fotos" />
+
+        <RadioButton
+            android:id="@+id/mapaPropiedadesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/foto_mapa_menu_drawable"
+            android:button="@null"
+            android:fontFamily="@font/amaranthregular"
+            android:textAlignment="center"
+            android:textColor="@color/foto_mapa_menu_text"
+            android:textSize="20sp"
+            tools:text="Mapa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/propietarioTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/amaranthregular"
+        android:textColor="#3F586F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:text="Propietario:" />
+
+    <ImageView
+        android:id="@+id/avatarMiniImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/propietarioTxt"
+        app:layout_constraintEnd_toStartOf="@+id/propietarioTxt"
+        app:layout_constraintTop_toTopOf="@+id/propietarioTxt"
+        app:srcCompat="@drawable/avatars0001" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/propiedades_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/propietarioTxt"
+        tools:listitem="@layout/propiedad_items" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_backblack"
+        app:titleTextColor="#E64545"
+        tools:title="Configuracion de busqueda" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/compraConfigBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableEnd="@drawable/check_box_img"
+                    android:fontFamily="@font/amaranthregular"
+                    android:textSize="20sp"
+                    tools:text="Compra" />
+
+                <RadioButton
+                    android:id="@+id/rentaConfigBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableEnd="@drawable/check_box_img"
+                    android:fontFamily="@font/amaranthregular"
+                    android:textSize="20sp"
+                    tools:text="Renta" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/minimoConfigTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/amaranthregular"
+                android:inputType="number"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+                tools:hint="Minimo" />
+
+            <EditText
+                android:id="@+id/maximoConfigTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranthregular"
+                android:inputType="number"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline18"
+                app:layout_constraintTop_toTopOf="@+id/minimoConfigTxt"
+                tools:hint="Maximo" />
+
+            <ImageView
+                android:id="@+id/mapaConfigCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/minimoConfigTxt"
+                app:srcCompat="@drawable/ic_dibujar_zona" />
+
+            <View
+                android:id="@+id/separador1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapaConfigCheck" />
+
+            <View
+                android:id="@+id/separador"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recamarasConfigTxt" />
+
+            <View
+                android:id="@+id/separador2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/banosConfigTxt" />
+
+            <View
+                android:id="@+id/separador3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carrosConfigTxt" />
+
+            <View
+                android:id="@+id/separador4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/instalacionesConfigCheck" />
+
+            <View
+                android:id="@+id/separador5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cocinaConfigCheck" />
+
+            <View
+                android:id="@+id/separador6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estanciaConfigCheck" />
+
+            <View
+                android:id="@+id/separador7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patioConfigCheck" />
+
+            <View
+                android:id="@+id/separador8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#A8A8A8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/albercaConfigCheck" />
+
+            <EditText
+                android:id="@+id/recamarasConfigTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/amaranthregular"
+                android:inputType="number"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador1"
+                tools:hint="Recamaras" />
+
+            <EditText
+                android:id="@+id/banosConfigTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/amaranthregular"
+                android:inputType="number"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador"
+                tools:hint="Banos" />
+
+            <EditText
+                android:id="@+id/carrosConfigTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/amaranthregular"
+                android:inputType="number"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador2"
+                tools:hint="Carros" />
+
+            <CheckBox
+                android:id="@+id/instalacionesConfigCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableEnd="@drawable/check_box_img"
+                android:fontFamily="@font/amaranthregular"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carrosConfigTxt"
+                tools:text="Intalaciones adicionales" />
+
+            <CheckBox
+                android:id="@+id/cocinaConfigCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableEnd="@drawable/check_box_img"
+                android:fontFamily="@font/amaranthregular"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador4"
+                tools:text="Cocina integrada" />
+
+            <CheckBox
+                android:id="@+id/estanciaConfigCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableEnd="@drawable/check_box_img"
+                android:fontFamily="@font/amaranthregular"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador5"
+                tools:text="Estancia" />
+
+            <CheckBox
+                android:id="@+id/patioConfigCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableEnd="@drawable/check_box_img"
+                android:fontFamily="@font/amaranthregular"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/separador6"
+                tools:text="Patio" />
+
+            <CheckBox
+                android:id="@+id/albercaConfigCheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableEnd="@drawable/check_box_img"
+                android:fontFamily="@font/amaranthregular"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patioConfigCheck"
+                tools:text="Alberca" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aceptBtn"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#59FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/albercaConfigCheck">
+
+                <TextView
+                    android:id="@+id/aceptarConfigCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/amaranthbold"
+                    android:gravity="center"
+                    android:textColor="#274762"
+                    android:textSize="30sp"
+                    tools:text="Aceptar" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

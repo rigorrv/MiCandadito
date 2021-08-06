@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/userBtn"
+        android:icon="@drawable/ic_avatars0001"
+        android:orderInCategory="100"
+        android:title="@string/todo"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/searchBtn"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        android:title="@string/todo"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
+
+

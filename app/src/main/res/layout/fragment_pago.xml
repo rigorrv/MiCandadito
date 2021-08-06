@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/amaranthbold"
+        android:gravity="center"
+        android:textColor="#E64545"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cuanto" />
+
+    <TextView
+        android:id="@+id/subtitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranthbold"
+        android:textColor="#172233"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTxt"
+        tools:text="quieres pagar?" />
+
+    <ImageView
+        android:id="@+id/borderMinMaxTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleTxt"
+        app:srcCompat="@drawable/ic_stroke_search" />
+
+    <EditText
+        android:id="@+id/minPay"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:autofillHints="minPay"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/amaranthbold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#506C82"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderMinMaxTxt"
+        app:layout_constraintStart_toStartOf="@+id/borderMinMaxTxt"
+        app:layout_constraintTop_toTopOf="@+id/borderMinMaxTxt"
+        tools:hint="Minimo" />
+
+    <EditText
+        android:id="@+id/maxPay"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/amaranthbold"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#506C82"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderMinMaxTxt"
+        app:layout_constraintEnd_toEndOf="@+id/borderMinMaxTxt"
+        app:layout_constraintTop_toTopOf="@+id/borderMinMaxTxt"
+        tools:hint="Maximo" />
+
+
+    <!-- Diseno fragmento -->
+
+    <ImageView
+        android:id="@+id/celular2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/cardGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/precio" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/borderMinMaxTxt"
+        app:layout_constraintEnd_toStartOf="@+id/maxPay"
+        app:layout_constraintStart_toEndOf="@+id/minPay"
+        app:layout_constraintTop_toTopOf="@+id/borderMinMaxTxt"
+        app:srcCompat="@drawable/ic_flip_btn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGuide"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#59FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/siguienteTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/amaranthbold"
+            android:gravity="center"
+            android:textColor="#274762"
+            android:textSize="30sp"
+            tools:text="Finalizar" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

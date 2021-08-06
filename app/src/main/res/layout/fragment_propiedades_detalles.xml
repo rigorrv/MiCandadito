@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:scrollbarSize="28sp">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/casa"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <TextView
+        android:id="@+id/fotosBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E64545"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Fotos"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+        android:id="@+id/mapaBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#506C82"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Mapa"
+        android:textColor="#314352"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:background="@drawable/ic_gradient_navigation_name"
+        android:fontFamily="@font/amaranthregular"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Villas del Palmar"
+        android:textColor="#172233"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotosBtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/amaranthbold"
+                android:gravity="center"
+                android:text="Ubicacion:"
+                android:textColor="#E64545"
+                android:textSize="20sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranthregular"
+                android:gravity="center"
+                android:text="Villas de palmar"
+                android:textColor="#172233"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranthbold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Detalles:"
+                android:textColor="#E64545"
+                android:textSize="20sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/amaranthregular"
+                android:gravity="center"
+                android:text="Cuenta con 2 recamaras y un patio amplio para disfrutar con la familia. Se encuentra cerca del hospital San Jose a 3 minutos de la escuela UESS"
+                android:textColor="#172233"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cama_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="3 Recamaras"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/bano_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="2 Banos"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cocina_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="Cocina"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/carro_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="2 Carros"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hospital_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="Hospital San Jose"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/propiedadIcon7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cama_icon" />
+
+                <TextView
+                    android:id="@+id/propiedadText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranthbold"
+                    android:text="Alberca"
+                    android:textColor="#172233"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:id="@+id/detallesBox6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/intallationText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranthregular"
+                        android:text="Boiler"
+                        android:textColor="#172233"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/instalation1"
+                        app:layout_constraintStart_toStartOf="@+id/instalation1"
+                        app:layout_constraintTop_toBottomOf="@+id/instalation1" />
+
+                    <TextView
+                        android:id="@+id/intallationText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranthregular"
+                        android:text="Internet"
+                        android:textColor="#172233"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/instalation2"
+                        app:layout_constraintStart_toStartOf="@+id/instalation2"
+                        app:layout_constraintTop_toBottomOf="@+id/instalation2" />
+
+                    <TextView
+                        android:id="@+id/intallationText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranthregular"
+                        android:text="A/C"
+                        android:textColor="#172233"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/instalation3"
+                        app:layout_constraintStart_toStartOf="@+id/instalation3"
+                        app:layout_constraintTop_toBottomOf="@+id/instalation3" />
+
+                    <TextView
+                        android:id="@+id/intallationText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranthregular"
+                        android:text="Otros"
+                        android:textColor="#172233"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/instalation4"
+                        app:layout_constraintStart_toStartOf="@+id/instalation4"
+                        app:layout_constraintTop_toBottomOf="@+id/instalation4" />
+
+                    <ImageView
+                        android:id="@+id/instalation1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="@+id/guideline8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cama_icon" />
+
+
+
+                    <ImageView
+                        android:id="@+id/instalation2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                        app:layout_constraintStart_toStartOf="@+id/guideline11"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cama_icon" />
+
+                    <ImageView
+                        android:id="@+id/instalation3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                        app:layout_constraintStart_toStartOf="@+id/guideline9"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cama_icon" />
+
+                    <ImageView
+                        android:id="@+id/instalation4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                        app:layout_constraintStart_toStartOf="@+id/guideline10"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cama_icon" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".2" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".8" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".4" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_gradient_navigation_name"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/dinero"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranthbold"
+            android:padding="5dp"
+            android:text="$8000"
+            android:textColor="#E64545"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

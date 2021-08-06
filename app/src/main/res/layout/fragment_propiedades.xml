@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:scrollbarSize="28sp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/propiedadesToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingEnd="16dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_propiedad_usuario"
+        app:navigationIcon="@drawable/ic_logoicono"
+        tools:title="Villa del palmar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/imagenesAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/propiedadesToolBar" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:listitem="@layout/direction_items" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenesAdapter">
+
+        <RadioButton
+            android:id="@+id/fotosPropiedadesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/foto_mapa_menu_drawable"
+            android:button="@null"
+            android:checked="true"
+            android:fontFamily="@font/amaranthregular"
+            android:textAlignment="center"
+            android:textColor="@color/foto_mapa_menu_text"
+            android:textSize="20sp"
+            tools:text="Fotos" />
+
+        <RadioButton
+            android:id="@+id/mapaPropiedadesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/foto_mapa_menu_drawable"
+            android:button="@null"
+            android:fontFamily="@font/amaranthregular"
+            android:textAlignment="center"
+            android:textColor="@color/foto_mapa_menu_text"
+            android:textSize="20sp"
+            tools:text="Mapa" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenesAdapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/circulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:tint="#172233"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+        <ImageView
+            android:id="@+id/circulo6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_circulo" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
